@@ -34,10 +34,7 @@ public class DevHotTestingTest extends BaseDevTest {
 
    @Test
    public void autoTestsInvocationTest() throws Exception {
-      
-      if (isWindows) return;
-
-      assertFalse(checkLogMessage(2000,  "Tests will run automatically"));
+      assertFalse(checkLogMessage(10000,  "Tests will run automatically"));
    
       testModifyJavaFile();
 
